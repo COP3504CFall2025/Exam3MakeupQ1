@@ -46,20 +46,3 @@ The `consultMax` function requires a `std::string` and a `std::map` with keys of
 
 The `returnMaxMap` function accepts a `std::map` with keys of type `std::string` and value `std::vector` of floats. The function will return a new `std::map` with keys of type `std::string` and values of type `float`. The returned map has the same string keys, and its associated value is a float that corresponds to the the maximum value found within the corresponding vector.
 
-# Question 4
-
-For this problem, you will implement two functions: `loadTrafficData` and `updateTrafficData`.
-
-Create a function called `loadTrafficData()` that has one parameter of type `std::string` for the filename.
-The `loadTrafficData()` function will read a `.csv` file (example below), putting the airport codes and their associated annual passenger numbers into a `std::map` with key of `std::string airport_code` and value `int number_of_passengers`. The `loadTrafficData()` function will return the map that was created.
-
-Create a Function named `updateTrafficData()` that has two parameters: a const `std::string filename` and a const reference to a `std::map` of key `std::string` and value `int`.
-The `updateTrafficData()` function will read the file and update the `std::map` that was passed in by updating the passenger number if the airport code is already in the map or add the new airport code with its passenger number, according to the CSV file.
-
-.csv’s example:
-```
-JFK,34000000
-LAX,28000000
-ORD,38000000
-```
-If the file does not open the program should print "-1".
