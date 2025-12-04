@@ -38,3 +38,40 @@ The `consultMax` function requires a `std::string` and a `std::map` with keys of
 
 The `returnMaxMap` function accepts a `std::map` with keys of type `std::string` and value `std::vector` of floats. The function will return a new `std::map` with keys of type `std::string` and values of type `float`. The returned map has the same string keys, and its associated value is a float that corresponds to the the maximum value found within the corresponding vector.
 
+# Question 3
+You are given an `n x n` array `mat`, where:
+
+mat[i][j] == 1 → person i knows person j
+
+mat[i][j] == 0 → person i does not know person j
+
+mat[i][i] == 1 for all i (given)
+
+A **celebrity** is someone who:
+
+* Knows no one except themselves
+
+* Is known by everyone else
+
+You are to write a function: `int findCelebrity(const std::vector<std::vector<int>>& mat);` that returns the index of the celebrity or `-1` if no celebrities are found.
+
+## Examples
+```
+mat = [ [1,1,0],
+        [0,1,0],
+        [0,1,1] ]
+Output: 1
+
+
+mat = [ [1,1],
+        [1,1] ]
+Output: -1
+
+mat = [ [1] ]
+Output: 0
+
+```
+
+You may use `std::stack<int>` or the provided `ArrayStack<int>` class.
+
+Implement only the function findCelebrity(mat).
