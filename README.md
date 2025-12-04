@@ -31,14 +31,9 @@ The mean, or average, is calculated by summing all the values in a dataset and t
 For example, if you have the values 3, 5, and 7, the mean would be (3 + 5 + 7) / 3 = 15 / 3 = 5.
 
 
+
+
 # Question 2
-For this problem, you will implement two functions `consultMax` and `returnMaxMap`.
-
-The `consultMax` function requires a `std::string` and a `std::map` with keys of type `std::string` and values `std::vector` of floats **both passed in by const reference**, and returns the maximum value within the vector associated with the provided string.  If the key is not found, you may return `-1`.
-
-The `returnMaxMap` function accepts a `std::map` with keys of type `std::string` and value `std::vector` of floats. The function will return a new `std::map` with keys of type `std::string` and values of type `float`. The returned map has the same string keys, and its associated value is a float that corresponds to the the maximum value found within the corresponding vector.
-
-# Question 3
 You are given an `n x n` array `mat`, where:
 
 mat[i][j] == 1 → person i knows person j
@@ -75,3 +70,10 @@ Output: 0
 You may use `std::stack<int>` or the provided `ArrayStack<int>` class.
 
 Implement only the function findCelebrity(mat).
+
+# Question 3
+For this problem, you will implement two functions `consultMax` and `returnMaxMap`.
+
+The `consultMax` function requires a `std::string` and a `std::map` with keys of type `std::string` and values `std::vector` of floats **both passed in by const reference**, and returns the maximum value within the vector associated with the provided string.  If the key is not found, you may return `-1`.
+
+The `returnMaxMap` function accepts a `std::map` with keys of type `std::string` and value `std::vector` of floats. The function will return a new `std::map` with keys of type `std::string` and values of type `float`. The returned map has the same string keys, and its associated value is a float that corresponds to the the maximum value found within the corresponding vector.
