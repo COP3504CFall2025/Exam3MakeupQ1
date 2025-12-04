@@ -1,4 +1,4 @@
-Exam 3 - Coding Portion
+Exam 3 - Coding Portion (C++)
 ---
 
 # Question 1
