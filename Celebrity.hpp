@@ -1,5 +1,5 @@
-#ifndef CELEBRITY_H
-#define CELEBRITY_H
+#ifndef CELEBRITY_HPP
+#define CELEBRITY_HPP
 
 #include <vector>
 
